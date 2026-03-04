@@ -6,14 +6,14 @@
 int main()
 {	
 	std::list<int> list;
-	list.push_back(5);
-	list.push_back(5);
-	list.push_back(5);
+	list.push_back(2);
+	list.push_back(3);
+	list.push_back(4);
 	list.push_back(5);
 	std::list<int>::iterator it2 = list.begin();
 	while (it2 != list.end()) {
 
-		std::cout << it2->first <<  std::endl;
+		std::cout << *it2 <<  std::endl;
 		++it2;
 	}
 	// std::vector<int> vec;

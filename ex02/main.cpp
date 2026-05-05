@@ -43,4 +43,4 @@ int main() {
 		++it2;
 	}
 	return 0;
-}º
+}

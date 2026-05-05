@@ -30,6 +30,8 @@ const	char* Span::myException::what() const throw()
 
 unsigned int Span::shortestSpan() const
 {
+	if(this->num.size() > this->N)
+		throw std::logic_error("No span: less than 2 elements");
 	std::vector<int> copy(this->num);
 
 	std::sort(copy.begin(), copy.end());
